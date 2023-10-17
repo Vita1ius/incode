@@ -6,5 +6,5 @@ import { authenticated } from "../middleware/auth.middleware.js";
 router.post('/user/sighup', userController.createUser)
 router.post('/user/login', userController.login)
 router.get('/users',authenticated, userController.getUsersByRole)
-router.post('/user/changeUserBoss',authenticated, userController.changeUserBoss)
+router.put('/user/changeUserBoss',authenticated, userController.changeUserBoss)
 export default router;
